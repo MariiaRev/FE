@@ -1,0 +1,164 @@
+No.     Time           Source                Destination           Protocol Length Info
+    110 4.801916       192.168.43.227        128.119.245.12        HTTP     480    GET /favicon.ico HTTP/1.1 
+
+Frame 110: 480 bytes on wire (3840 bits), 480 bytes captured (3840 bits) on interface 0
+Ethernet II, Src: HonHaiPr_ae:81:af (10:08:b1:ae:81:af), Dst: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce)
+Internet Protocol Version 4, Src: 192.168.43.227, Dst: 128.119.245.12
+Transmission Control Protocol, Src Port: 1699, Dst Port: 80, Seq: 1, Ack: 1, Len: 426
+Hypertext Transfer Protocol
+    GET /favicon.ico HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /favicon.ico HTTP/1.1\r\n]
+        Request Method: GET
+        Request URI: /favicon.ico
+        Request Version: HTTP/1.1
+    Host: gaia.cs.umass.edu\r\n
+    Connection: keep-alive\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\r\n
+    Accept: image/webp,image/apng,image/*,*/*;q=0.8\r\n
+    Referer: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6\r\n
+    \r\n
+    [Full request URI: http://gaia.cs.umass.edu/favicon.ico]
+    [HTTP request 1/1]
+    [Response in frame: 112]
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 4.961336       128.119.245.12        192.168.43.227        HTTP     559    HTTP/1.1 302 Found  (text/html)
+
+Frame 112: 559 bytes on wire (4472 bits), 559 bytes captured (4472 bits) on interface 0
+Ethernet II, Src: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce), Dst: HonHaiPr_ae:81:af (10:08:b1:ae:81:af)
+Internet Protocol Version 4, Src: 128.119.245.12, Dst: 192.168.43.227
+Transmission Control Protocol, Src Port: 80, Dst Port: 1699, Seq: 1, Ack: 427, Len: 505
+Hypertext Transfer Protocol
+    HTTP/1.1 302 Found\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 302 Found\r\n]
+        Response Version: HTTP/1.1
+        Status Code: 302
+        [Status Code Description: Found]
+        Response Phrase: Found
+    Content-Type: text/html; charset=UTF-8\r\n
+    Content-Length: 248\r\n
+    Location: http://lp.kyivstar.net/error.html?msisdn=380683969881&error-code=404&request-url1=http://gaia.cs.umass.edu/favicon.ico\r\n
+    Cache-Control: no-cache\r\n
+    Connection: Close\r\n
+    \r\n
+    [HTTP response 1/1]
+    [Time since request: 0.159420000 seconds]
+    [Request in frame: 110]
+    [Request URI: http://gaia.cs.umass.edu/favicon.ico]
+    File Data: 248 bytes
+Line-based text data: text/html (1 lines)
+
+No.     Time           Source                Destination           Protocol Length Info
+    139 7.013700       192.168.43.227        128.119.245.12        HTTP     654    GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1 
+
+Frame 139: 654 bytes on wire (5232 bits), 654 bytes captured (5232 bits) on interface 0
+Ethernet II, Src: HonHaiPr_ae:81:af (10:08:b1:ae:81:af), Dst: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce)
+Internet Protocol Version 4, Src: 192.168.43.227, Dst: 128.119.245.12
+Transmission Control Protocol, Src Port: 1703, Dst Port: 80, Seq: 1, Ack: 1, Len: 600
+Hypertext Transfer Protocol
+    GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /wireshark-labs/HTTP-wireshark-file4.html HTTP/1.1\r\n]
+        Request Method: GET
+        Request URI: /wireshark-labs/HTTP-wireshark-file4.html
+        Request Version: HTTP/1.1
+    Host: gaia.cs.umass.edu\r\n
+    Connection: keep-alive\r\n
+    Cache-Control: max-age=0\r\n
+    Upgrade-Insecure-Requests: 1\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\r\n
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6\r\n
+    If-None-Match: "2ca-5953d25d1970b"\r\n
+    If-Modified-Since: Sat, 19 Oct 2019 05:59:03 GMT\r\n
+    \r\n
+    [Full request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html]
+    [HTTP request 1/2]
+    [Response in frame: 143]
+    [Next request in frame: 144]
+
+No.     Time           Source                Destination           Protocol Length Info
+    143 7.186768       128.119.245.12        192.168.43.227        HTTP     294    HTTP/1.1 304 Not Modified 
+
+Frame 143: 294 bytes on wire (2352 bits), 294 bytes captured (2352 bits) on interface 0
+Ethernet II, Src: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce), Dst: HonHaiPr_ae:81:af (10:08:b1:ae:81:af)
+Internet Protocol Version 4, Src: 128.119.245.12, Dst: 192.168.43.227
+Transmission Control Protocol, Src Port: 80, Dst Port: 1703, Seq: 1, Ack: 601, Len: 240
+Hypertext Transfer Protocol
+    HTTP/1.1 304 Not Modified\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 304 Not Modified\r\n]
+        Response Version: HTTP/1.1
+        Status Code: 304
+        [Status Code Description: Not Modified]
+        Response Phrase: Not Modified
+    Date: Sat, 19 Oct 2019 08:55:54 GMT\r\n
+    Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16 mod_perl/2.0.10 Perl/v5.16.3\r\n
+    Connection: Keep-Alive\r\n
+    Keep-Alive: timeout=5, max=100\r\n
+    ETag: "2ca-5953d25d1970b"\r\n
+    \r\n
+    [HTTP response 1/2]
+    [Time since request: 0.173068000 seconds]
+    [Request in frame: 139]
+    [Next request in frame: 144]
+    [Next response in frame: 145]
+    [Request URI: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html]
+
+No.     Time           Source                Destination           Protocol Length Info
+    144 7.377505       192.168.43.227        128.119.245.12        HTTP     523    GET /favicon.ico HTTP/1.1 
+
+Frame 144: 523 bytes on wire (4184 bits), 523 bytes captured (4184 bits) on interface 0
+Ethernet II, Src: HonHaiPr_ae:81:af (10:08:b1:ae:81:af), Dst: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce)
+Internet Protocol Version 4, Src: 192.168.43.227, Dst: 128.119.245.12
+Transmission Control Protocol, Src Port: 1703, Dst Port: 80, Seq: 601, Ack: 241, Len: 469
+Hypertext Transfer Protocol
+    GET /favicon.ico HTTP/1.1\r\n
+        [Expert Info (Chat/Sequence): GET /favicon.ico HTTP/1.1\r\n]
+        Request Method: GET
+        Request URI: /favicon.ico
+        Request Version: HTTP/1.1
+    Host: gaia.cs.umass.edu\r\n
+    Connection: keep-alive\r\n
+    Pragma: no-cache\r\n
+    Cache-Control: no-cache\r\n
+    User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36\r\n
+    Accept: image/webp,image/apng,image/*,*/*;q=0.8\r\n
+    Referer: http://gaia.cs.umass.edu/wireshark-labs/HTTP-wireshark-file4.html\r\n
+    Accept-Encoding: gzip, deflate\r\n
+    Accept-Language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uk;q=0.6\r\n
+    \r\n
+    [Full request URI: http://gaia.cs.umass.edu/favicon.ico]
+    [HTTP request 2/2]
+    [Prev request in frame: 139]
+    [Response in frame: 145]
+
+No.     Time           Source                Destination           Protocol Length Info
+    145 7.544970       128.119.245.12        192.168.43.227        HTTP     559    HTTP/1.1 302 Found  (text/html)
+
+Frame 145: 559 bytes on wire (4472 bits), 559 bytes captured (4472 bits) on interface 0
+Ethernet II, Src: 2e:57:31:39:c9:ce (2e:57:31:39:c9:ce), Dst: HonHaiPr_ae:81:af (10:08:b1:ae:81:af)
+Internet Protocol Version 4, Src: 128.119.245.12, Dst: 192.168.43.227
+Transmission Control Protocol, Src Port: 80, Dst Port: 1703, Seq: 241, Ack: 1070, Len: 505
+Hypertext Transfer Protocol
+    HTTP/1.1 302 Found\r\n
+        [Expert Info (Chat/Sequence): HTTP/1.1 302 Found\r\n]
+        Response Version: HTTP/1.1
+        Status Code: 302
+        [Status Code Description: Found]
+        Response Phrase: Found
+    Content-Type: text/html; charset=UTF-8\r\n
+    Content-Length: 248\r\n
+    Location: http://lp.kyivstar.net/error.html?msisdn=380683969881&error-code=404&request-url1=http://gaia.cs.umass.edu/favicon.ico\r\n
+    Cache-Control: no-cache\r\n
+    Connection: Close\r\n
+    \r\n
+    [HTTP response 2/2]
+    [Time since request: 0.167465000 seconds]
+    [Prev request in frame: 139]
+    [Prev response in frame: 143]
+    [Request in frame: 144]
+    [Request URI: http://gaia.cs.umass.edu/favicon.ico]
+    File Data: 248 bytes
+Line-based text data: text/html (1 lines)
