@@ -1,0 +1,26 @@
+table, th, td
+{
+	border: 1px solid;
+	/*border-collapse: collapse;*/
+}
+.list
+{
+	float: left;
+	margin: 0 5%;
+}
+.leadingZero
+{
+	list-style-type: decimal-leading-zero;
+}  			
+.square
+{
+	list-style-type: square;
+}
+.circle
+{
+	list-style-type: circle;
+}
+.none
+{
+	list-style-type: none;
+}
