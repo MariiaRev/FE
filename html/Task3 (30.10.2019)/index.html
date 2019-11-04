@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<title>GENERAL HTML REVENKO (30.10.2019)</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css"/>
+		<script src="script/main.js"></script> 
+	</head>
+	<body>
+		<header>
+			<h1>Lumumba badminton club</h1>
+			<nav>
+				<a href=""><img src="image/LumumbsClub_FLAG_700x600.jpg" alt="logo" class="logo"/></a> <!--Буде картинка з прозорим фоном-->
+				<ul>
+					<li>
+						<a href=#>Головна</a>
+					</li>
+					<li>
+						<a href="partials/aboutClub.html">Про клуб</a>
+					</li>
+					<li>
+						<a href="partials/history.html">Історія</a>
+					</li>
+					<li>
+						<a href="partials/badmintonRules.html">Правила гри в бадмінтон</a>
+					</li>
+					<li>
+						<a href="partials/gallery.html">Фотогалерея</a>
+					</li>
+					<li>
+						<a href=#contacts>Контакти</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h2>Вітаємо у Lumumba club!</h2>
+				<img src="image/Badminton-Player.png" alt="" class="elementToLeft img1"/>
+				<!--<p>
+					*надихаючий текст про бадмінтон* (буде замінено на нормальний текст ;)
+				</p>-->
+				<p class="text">
+					Багато людей навіть не здогадуються наскільки цікавий і складний бадмінтон. Всі звикли, що це проста розвага на природі або на задньому дворі будинку. На аматорському рівні дійсно досить просто намагатися утримати волан у повітрі, а ось професіоналам, щоб перемогти, доводиться проявляти хитрість, гнучкість, витривалість, ідеальну координацію, незвичайну силу і спритність, вміння розвивати велику швидкість і проводити стрімкі атаки протягом досить тривалого періоду часу.
+				</p>
+				<p class="text">
+					Новачок, любитель чи професіонал - не важливо! Ми вміло поєднуємо гравців різного рівня задля отримання гравцями нового досвіду. Наш клуб - це справжня сім'я, яка дружньо займається бадмінтоном.
+				</p>
+				<p class="text">
+					Переглянути <a href=#schedule>графік тренувань</a> клубу.
+				</p>
+				<p class="text">
+					Щоб потрапити на тренування, заповніть <a href=#form>форму</a>.
+				</p>
+			</section>
+			<section>
+				<article id="schedule">
+					<h2>Графік тренувань</h2>
+					<table class="schedule">
+						<caption>Графік тренувань Lumumba club</caption>
+						<thead>
+							<tr>
+								<th>Тренер</th>
+								<th>Вівторок</th>
+								<th>Четвер</th>
+								<th>Неділя</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Генадій</td>
+								<td>19:00-21:00</td>
+								<td rowspan="2">20:00-22:00</td>
+								<td>17:00-19:00</td>
+							</tr>
+							<tr>
+								<td>Олександр</td>
+								<td>17:00-19:00</td>
+								<td>15:00-17:00</td>
+							</tr>
+							<tr>
+								<td>Вікторія</td>
+								<td>10:00-12:00</td>
+								<td colspan="2">12:00-14:00</td>
+							</tr>
+						</tbody>
+					</table>
+					<img src="image/rackets.jpg" alt=""/>
+				</article>
+				<aside>
+					<img src="image/shuttlecock.png" alt=""/>
+					<h3>Корисні посилання</h3>
+					<ul class="usefulLinks">
+						<li>
+							<a href="https://www.youtube.com/watch?v=PBXcaRyHXUw" target="_blank">Смеш</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/user/coachingbadminton/featured" target="_blank">Coaching badminton</a>
+						</li>
+						<li>
+							<a href="http://fbubadminton.org.ua/pravila-igry-v-badminton/" target="_blank">Бадмінтон в Україні та світі</a>
+						</li>
+						<li>
+							<a href="https://www.tournamentsoftware.com" target="_blank">Змагання</a>
+						</li>
+					</ul>
+				</aside>
+			</section>
+			<section id="form">
+				<h2>Записатися на тренування</h2>
+				<form action=#>
+					<fieldset>
+						<legend>Контактна інформація</legend>
+						<p>
+							<label for="name">Ім'я<em>*</em></label>
+							<input type="text" id="name" />
+						</p>
+						<p>
+							<label for="email">Пошта<em>*</em></label>
+							<input type="email" id="email" />
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Тренування</legend>
+						<p>
+							<label for="day">День тренування<em>*</em></label>
+							<label><input type="checkbox" id="day" />Вт</label>
+							<label><input type="checkbox"  />Чт</label>
+							<label><input type="checkbox"  />Нд</label>
+						</p>
+						<p>
+							<label for="trainerInput">Тренер<em>*</em></label>
+							<input list="trainer" id="trainerInput">
+							<datalist id="trainer">
+								<option value="Генадій"></option>
+								<option value="Олександр"></option>
+								<option value="Вікторія"></option>
+							</datalist>
+						</p>
+					</fieldset>
+					<p>
+						<input type="reset" name="reset" value="Відмінити">
+						<input type="submit" name="submit" value="Записатися">
+					</p>
+				</form>
+			</section>
+			<section>
+				<h2>Медіа</h2>
+				<dl>
+					<dt>Аудіо</dt>
+					<dd>
+						<ol>
+							<li>
+								<p>Wicked Game by Jonny Depp</p>
+								<audio controls>
+				                	<source src="audio/WickedGame.mp3" type="audio/mp3">
+				                </audio>
+				            </li>
+				            <li>
+				            	<p>Renesmee's lullaby by Carter Burwell</p>
+								<audio controls>
+				                	<source src="audio/Lullaby.mp3" type="audio/mp3">
+				                </audio>
+				            </li>
+			        	</ol>
+			        </dd>
+			        <dt>Відео</dt>
+			        <dd>
+			        	<ol>
+				        	<li>
+				        		<p>Приклад гри у бадмінтон (уривок з Олімпіади).</p>
+				        		<video controls>
+				        			<source src="video/OlympicsBadminton.mp4" type="video/mp4">
+				        		</video>
+				        	</li> 
+				        	<li>
+				        		<p>Чемпіонат України з бадмінтону <time>2017</time>.</p>	
+				        		<video controls loop>
+				        			<source src="video/UkraineChanmpionship.mp4" type="video/mp4">
+				        		</video>
+				        	</li>
+				        </ol>
+			        </dd>
+		    	</dl>
+			</section>
+		</main>
+		<footer>
+			<div id="contacts">
+				<p>
+					<a href="mailto:lumumba.badminton@gmail.com">Надіслати листа</a><br> lumumba.badminton@gmail.com
+				</p>
+				<p>
+					<a href="tel:+380500505050">Подзвонити</a><br> +380500505050
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
