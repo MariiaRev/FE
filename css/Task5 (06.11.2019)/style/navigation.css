@@ -1,0 +1,31 @@
+nav
+{
+	background-color: #312782;
+	min-height: 50px;
+}
+nav ul
+{
+
+}
+nav ul li
+{
+	list-style-type: none;
+	display: inline;
+
+}
+nav ul li a
+{
+	text-decoration: none;
+	color: #ffffff;
+	font-family: "RitaSmith";
+	font-size: 1.5em;
+
+}
+.flex-container
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 500px;
+	align-items: center;
+}

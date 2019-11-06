@@ -1,0 +1,47 @@
+form div
+{
+	margin-left: 5%;
+	margin-bottom: 0.5%;
+}
+input[type="radio"]::after
+{
+	content: '';
+	width: 11px;
+    height: 11px;
+    top: 0;
+    border-radius: 12px;
+    position: relative;
+    background-color: #d1d3d1;
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid green;
+}
+input[type="radio"]:checked::after
+{
+	content: '';
+	width: 2px;
+    height: 2px;
+    top: -19.5px;
+    left: 4.5px;
+    z-index: 5;
+    border-radius: 12px;
+   /* position: relative;*/
+    background-color: #d1d3d1;
+    display: inline-block;
+    visibility: visible;
+	background-color: green;
+}
+input[type="radio"]:checked::before {
+	content: '';
+    width: 11px;
+    height: 11px;
+    top: 0;
+    left: 0;
+    position: relative;
+    border-radius: 12px;
+    display: inline-block;
+    visibility: visible;
+    background-color: #d1d3d1;
+    border: 1px solid green;
+    z-index: 2;
+}

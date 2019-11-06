@@ -1,0 +1,34 @@
+@import url("task1.css");
+@import url("task2.css");
+@import url("switch-btn.css");
+@import url("footer.css");
+@import url("fonts.css");
+@import url("inherit.css");
+
+*
+{
+	margin-left: 2%;
+}
+
+p
+{
+	margin-left: 40px;
+	margin-top: 20px;
+	font-size: 2em;
+}
+section
+{
+	margin-top: 50px;
+}
+.par1
+{
+	font-family: "Sowjetschablone";
+}
+.par2
+{
+	font-family: "RitaSmith";
+}
+.par3
+{
+	font-family: "Regular-Light";
+}

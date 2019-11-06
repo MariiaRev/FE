@@ -1,0 +1,12 @@
+.text
+{
+	padding: 15px;
+	text-align: center;
+	border: inherit;
+}
+.border
+{
+	padding: 30px;
+	width: 600px;
+	border: 1px solid #a60000;
+}

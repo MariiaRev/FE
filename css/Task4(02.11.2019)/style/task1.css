@@ -1,0 +1,72 @@
+ul li
+{
+	list-style-type: none;
+	display: inline;
+	color: #ffffff;
+	margin: 20px -4px 0 0;
+	background-color: #BF3030;
+	display: inline-block;
+	min-width: 150px;
+	text-align: center;
+	padding: 21px 0;
+	position: relative;					/* Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom
+										 	изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения. */
+	border: 3px solid #FF4040;
+}
+ul li:first-child
+{
+	margin-left: 0;
+}
+ul li:first-child::after,
+ul li:first-child::before
+{
+	z-index: 1;
+}
+ul li:nth-child(2)::after,
+ul li:nth-child(2)::before
+{
+	z-index: 2;
+}
+
+ul li:not(:last-child)::after
+{
+	content: "";
+	position: absolute;					/*Элемент абсолюно позиционирован. Если у родителя значение position задано как fixed, relative или absolute, 
+											то отсчет координат ведется от края родительского элемента.*/
+	top: 0;
+	bottom: 0;
+	left: 150px;
+	border: 30px solid transparent;				/* "высота" треугольник*/
+	border-left: 50px solid #BF3030;		/* "длина" треуголника*/
+	border-radius: 0 50px 50px 0;
+}
+ul li:not(:last-child)::before
+{
+ content: "";
+ position: absolute; 
+ top: 0;
+ bottom: 0;
+ left: 155px;
+ border: 30px solid transparent;    
+ border-left: 50px solid  #FF4040;  
+ border-radius: 0 50px 50px 0;
+}
+ul li:last-child
+{
+	background-color: #a60000;
+}
+
+.list1, .list2
+{
+	margin: 3%;
+}
+.list2 li:last-child
+{
+	background-color: #BF3030;
+	transition: all 0.4s ease;
+}
+.list2 li:last-child:hover
+{
+	background-color: #a60000;
+	transition: all 0.4s ease;
+}

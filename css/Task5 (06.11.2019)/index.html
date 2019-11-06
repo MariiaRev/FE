@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<title>TASK5 REVENKO (06.11.2019)</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css"/>
+		<script src="script/main.js"></script> 
+	</head>
+	<body>
+		<header>
+			<a href=""><img src="image/igromag_logo.png" alt="logo" class="logo" /></a>
+			<h1>Магазин настільних ігор</h1>			
+		</header>
+		<nav>
+			<div class="flex-container">
+				<ul>
+					<li>
+						<a href=#>Головна</a>
+					</li>
+					<li>Каталог
+						<ul>
+							<li>Настільні ігри
+								<ul>
+									<li>Для дітей</li>
+									<li>Для сім'ї</li>
+									<li>Головоломки</li>
+									<li>Для відпочинку</li>
+								</ul>
+							</li>
+							<li>Аксесуари</li>
+							<li>Подарункові сертифікати</li>
+						</ul>
+					</li>
+					<li>
+						<a href=#>Настільний клуб</a>
+					</li>
+					<li>
+						<a href=#>Замовлення</a>
+					</li>
+					<li>
+						<a href=#>Про нас</a>
+					</li>
+					<li>
+						<a href=#>Контакти</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<main>
+			<section>
+				<h2>Вітаємо у  club!</h2>
+				
+			</section>
+			<section>
+				<article id="schedule">
+					<h2>Графік тренувань</h2>
+					<table class="schedule">
+						<caption>Графік тренувань Lumumba club</caption>
+						<thead>
+							<tr>
+								<th>Тренер</th>
+								<th>Вівторок</th>
+								<th>Четвер</th>
+								<th>Неділя</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Генадій</td>
+								<td>19:00-21:00</td>
+								<td rowspan="2">20:00-22:00</td>
+								<td>17:00-19:00</td>
+							</tr>
+							<tr>
+								<td>Олександр</td>
+								<td>17:00-19:00</td>
+								<td>15:00-17:00</td>
+							</tr>
+							<tr>
+								<td>Вікторія</td>
+								<td>10:00-12:00</td>
+								<td colspan="2">12:00-14:00</td>
+							</tr>
+						</tbody>
+					</table>
+					<img src="image/rackets.jpg" alt=""/>
+				</article>
+				<aside>
+					<img src="image/shuttlecock.png" alt=""/>
+					<h3>Корисні посилання</h3>
+					<ul class="usefulLinks">
+						<li>
+							<a href="https://www.youtube.com/watch?v=PBXcaRyHXUw" target="_blank">Смеш</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/user/coachingbadminton/featured" target="_blank">Coaching badminton</a>
+						</li>
+						<li>
+							<a href="http://fbubadminton.org.ua/pravila-igry-v-badminton/" target="_blank">Бадмінтон в Україні та світі</a>
+						</li>
+						<li>
+							<a href="https://www.tournamentsoftware.com" target="_blank">Змагання</a>
+						</li>
+					</ul>
+				</aside>
+			</section>
+			<section id="form">
+				<h2>Записатися на тренування</h2>
+				<form action=#>
+					<fieldset>
+						<legend>Контактна інформація</legend>
+						<p>
+							<label for="name">Ім'я<em>*</em></label>
+							<input type="text" id="name" />
+						</p>
+						<p>
+							<label for="email">Пошта<em>*</em></label>
+							<input type="email" id="email" />
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Тренування</legend>
+						<p>
+							<label for="day">День тренування<em>*</em></label>
+							<label><input type="checkbox" id="day" name="day" />Вт</label>
+							<label><input type="checkbox" name="day" />Чт</label>
+							<label><input type="checkbox" name="day" />Нд</label>
+						</p>
+						<p>
+							<label for="trainerInput">Тренер<em>*</em></label>
+							<input list="trainer" id="trainerInput">
+							<datalist id="trainer">
+								<option value="Генадій"></option>
+								<option value="Олександр"></option>
+								<option value="Вікторія"></option>
+							</datalist>
+						</p>
+					</fieldset>
+					<p>
+						<input type="reset" name="reset" value="Відмінити">
+						<input type="submit" name="submit" value="Записатися">
+					</p>
+				</form>
+			</section>
+			<section>
+				<h2>Медіа</h2>
+				<dl>
+					<dt>Аудіо</dt>
+					<dd>
+						<ol>
+							<li>
+								<p>Wicked Game by Jonny Depp</p>
+								<audio controls>
+				                	<source src="audio/WickedGame.mp3" type="audio/mp3">
+				                </audio>
+				            </li>
+				            <li>
+				            	<p>Renesmee's lullaby by Carter Burwell</p>
+								<audio controls>
+				                	<source src="audio/Lullaby.mp3" type="audio/mp3">
+				                </audio>
+				            </li>
+			        	</ol>
+			        </dd>
+			        <dt>Відео</dt>
+			        <dd>
+			        	<ol>
+				        	<li>
+				        		<p>Приклад гри у бадмінтон (уривок з Олімпіади).</p>
+				        		<video controls>
+				        			<source src="video/OlympicsBadminton.mp4" type="video/mp4">
+				        		</video>
+				        	</li> 
+				        	<li>
+				        		<p>Чемпіонат України з бадмінтону <time>2017</time>.</p>	
+				        		<video controls loop>
+				        			<source src="video/UkraineChanmpionship.mp4" type="video/mp4">
+				        		</video>
+				        	</li>
+				        </ol>
+			        </dd>
+		    	</dl>
+			</section>
+		</main>
+		<footer>
+			<div id="contacts">
+				<p>
+					<a href="mailto:lumumba.badminton@gmail.com">Надіслати листа</a><br> lumumba.badminton@gmail.com
+				</p>
+				<p>
+					<a href="tel:+380500505050">Подзвонити</a><br> +380500505050
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
