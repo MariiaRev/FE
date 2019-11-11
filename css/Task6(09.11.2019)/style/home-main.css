@@ -1,0 +1,189 @@
+main
+{
+	min-height: 500px;
+}
+.sect1
+{
+	background-color: #353535;
+	min-height: 500px;
+}
+.top
+{
+	min-height: 160px;
+	width: 170px;
+	/*background-color: #fb7732;*/
+    background: linear-gradient(to top left, #ce392f, #fb7732);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	position: relative;
+}
+.bottom
+{
+	min-height: 160px;
+	width: 170px;
+	background-color: #ffffff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	color: black;
+	position: relative;
+	z-index: 2;
+}
+.product
+{
+	margin-left: 150px;
+	padding: 80px 0;
+	min-width: 200px;
+	color: #ffffff;
+}
+.sneaker, .sneaker-logo, .text, .title, .fast,
+.new, .product-title, .collection,
+.fa-star, .size, .flex-container,
+.colour, .price
+{
+	position: absolute;
+}
+.sneaker
+{
+	width: 150px;
+	top: 75px;
+	left: 92px;
+	z-index: 3;
+}
+.sneaker-logo
+{
+	width: 20px; 
+	left: 20px;
+	top: 10px;
+}
+.text, .title,
+.product-title, .collection,
+.star1, .size, .colour, .myForm
+{
+	left: 20px;
+}
+.title
+{
+	top: 35px;
+	font-family: "Bobcat-Regular";
+	font-weight: bold;
+}
+.text
+{
+	width: 90px;
+	top: 55px;
+	font-size: 0.7em;
+	line-height: 1;
+	font-family: "Bobcat-Regular";
+}
+.fast
+{
+	bottom: -10px;
+	left: 10px;
+	font-size: 5em;
+	letter-spacing: 2px;
+	color: #333333;
+	opacity: 0.3;
+	z-index: 4;
+}
+.bottom span
+{
+	font-family: "Bobcat-Regular";
+}
+.bottom p
+{
+	font-family: "Bobcat-Regular";
+	font-size: 1em;
+}
+.bottom .new
+{
+	top: 10px;
+	left: 125px;
+	color: #ffffff;
+	background-color: #68DA2B;
+	padding: 0 5px;
+	border-radius: 3px;
+	font-size: 0.7em;
+}
+.bold
+{
+	font-weight: bold;
+}
+.product-title
+{
+	top: 15px;
+	text-transform: uppercase;
+}
+.bottom .collection
+{
+	top: 35px;
+	font-size: 0.7em;
+}
+.fa-star
+{
+	font-size: 8px;
+	top: 50px;
+}
+.star2
+{
+	left: 30px;
+}
+.star3
+{
+	left: 40px;
+}
+.star4
+{
+	left: 50px;
+}
+.star5
+{
+	left: 60px;
+	opacity: 0.5;
+}
+.bottom .size
+{
+	top: 70px;
+	font-size: 0.7em;
+}
+.flex-container
+{
+	top: 85px;
+	left: 13px;
+	display: inline-flex;
+	width: 120px;
+	padding: 0;
+	justify-content: space-between;
+}
+ul li
+{
+	list-style-type: none;
+	padding: 2px 7px;
+}
+ul li:hover
+{
+	background-color: #fb7732;
+	border-radius: 50%;
+	color: #ffffff;
+}
+.bottom .colour
+{
+	font-size: 0.7em;
+	top: 110px;
+}
+.myForm
+{
+	top: 130px;
+	left: 20px;
+	width: 60px;
+}
+.price
+{
+	top: 126px;
+	left: 90px;
+	width: 70px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #68DA2B;
+	padding: 0 10px;
+	border-radius: 4px;
+}

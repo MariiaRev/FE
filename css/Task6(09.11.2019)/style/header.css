@@ -1,0 +1,17 @@
+*
+{
+	margin: 0;
+	font-family: "RitaSmith";
+}
+h1 
+{
+	text-align: center;
+	color: #fb7732;
+	justify-content: center;
+}
+header
+{
+	background-color: #ffffff;
+	min-height: 50px;	
+	padding: 10px 50px;
+}
