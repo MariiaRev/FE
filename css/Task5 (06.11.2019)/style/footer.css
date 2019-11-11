@@ -3,6 +3,13 @@ footer
 	margin-top: 5%;
 	padding: 1% 5%;
 	background-color: #ffcc01;
+	display: flex;
+	justify-content: space-around;
+	align-content: flex-end;
+}
+.footer-col
+{
+	align-items: flex-end;
 }
 footer a
 {
