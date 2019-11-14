@@ -1,0 +1,18 @@
+footer
+{
+	min-height: 30px;
+	background-color: #005454;
+	margin-right: 300px;
+	text-align: center;
+	padding: 30px 0 10px 0;
+	color: #ffffff;
+}
+footer p, footer a
+{
+	font-family: "Monserrat", "Times New Roman";
+}
+footer a
+{
+	text-decoration: none;
+	color: #30c0c0;
+}

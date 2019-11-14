@@ -1,0 +1,44 @@
+nav
+{
+	min-height: 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	max-height: 100%;
+	width: 300px;
+	background: rgba(0, 84, 84, .8);
+	overflow: auto;
+}
+nav ul li a
+{
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+nav ul li a:hover
+{
+	transition: all 0.5s ease;
+	font-size: 1.1em;
+}
+nav ul li a:first-child
+{
+	color: #30c0c0;
+	
+}
+nav ul li a:last-child
+{
+	color: #ffffff;
+}
+nav ul li a:last-child:hover
+{
+	text-decoration: underline;
+}
+nav h2
+{
+	margin: 15px 0;
+	color: #57c0c0;
+	text-transform: uppercase;
+}
+nav ul
+{
+	margin-bottom: 15px;
+}
