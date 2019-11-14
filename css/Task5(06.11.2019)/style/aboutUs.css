@@ -1,0 +1,51 @@
+.aboutUs > p
+{
+	color: #000000;
+	font-size: 24px;
+	padding: 10px 20px;
+}
+.team
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	padding-top: 20px;
+	flex-wrap: wrap;
+}
+.team > .info img
+{
+	width: 100%;
+	border-radius: 50%;	
+	overflow: hidden;
+	transition: all 1s ease-out;
+}
+.team > .info:hover .persInfo
+{
+	display: block;
+	width: 25%;
+	transition: 0.5s opacity;
+	position: absolute;
+	top: 62%;
+	left: 32%;
+}
+.team > .info img:hover
+{
+	/*background-color: #333333;
+	opacity: 0.5;*/
+	transition: scale(1.1);
+}
+.team > .info
+{
+	font-size: 24px;
+	color: black;
+	/*background-color: #333333;*/
+	text-align: center;
+	width: 20%;
+	position: relative;
+
+}
+.persInfo
+{
+	display: none;
+	transition: 0.5s opacity;
+}

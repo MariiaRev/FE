@@ -1,0 +1,46 @@
+.main
+{
+	/*min-height: 600px;*/
+	position: relative;
+	margin: -4px;
+}
+.homeImage
+{
+	width: 100%;
+	z-index: 1;
+}
+
+section[class="main"] h2::before
+{
+	content: "";
+	background-color: #04368f /*312782*/;
+	display: block;
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: 2;
+}
+section[class="main"] h2
+{
+	position: absolute;
+	max-width: 400px;
+	text-align: center;
+
+	top: 57%; 
+	left: 35%;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 64px;
+	z-index: 5;
+}
+.text
+{
+	color: #ffffff;
+	position: absolute;
+	top: 80%;
+	left: 37%;
+	font-size: 2em;
+}
