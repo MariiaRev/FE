@@ -1,15 +1,25 @@
-.menu 
+nav
 {
 	background-color: #312782;
-	min-height: 60px;
 	position: sticky;
 	top: 0;
-	width: 100%;
 	z-index: 3;
+}
+.menu 
+{
+	min-height: 71px;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+.menu .burger-menu
+{
+	display: none;
 }
 .menu > ul
 {
 	display: flex;
+	flex-wrap: wrap;
  	justify-content: center;
 }
 .menu > ul li
@@ -23,7 +33,7 @@
 .menu > ul li a
 {
 	text-decoration: none;
-	padding: 19px 30px 19px 40px;
+	padding: 24px 40px 24px 40px;
 	color: #ffffff;
 	transition: all 0.3s ease;
 	display: block;
@@ -47,8 +57,8 @@
 .menu li ul
 {
 	position: absolute;
-	top: 60px;
-	min-width: 150px;
+	top: 71px;
+	min-width: 140px;
 	display: none;
 }
 .menu li > ul li a
@@ -60,7 +70,7 @@
 {
 	position: absolute;
 	top: 0;
-	left: 150px;
+	left: 140px;
 }
 .menu li:hover > ul
 {
