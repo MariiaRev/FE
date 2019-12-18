@@ -1,0 +1,120 @@
+article
+{
+	min-height: 800px;
+	/*background: linear-gradient(to right, #5fa8eb, #55e4cb);*/
+	text-align: justify;
+}
+article header
+{
+	background-color: #ffffff;
+	margin: 100px 580px 100px 280px;
+	max-width: 400px;
+	padding: 20px 50px;
+	position: relative;
+	overflow: visible;
+	background-color: #ffffff;
+	display: block;
+}
+article header::before
+{
+	content: "";
+	position: absolute; 
+	top: -50px;
+	left: -200px;
+	display: block;   
+	border-top: 50px solid  #ffffff; 
+	border-left: 100px solid  transparent; 
+	border-right: 100px solid  #ffffff; 
+	border-bottom: 50px solid  #ffffff; 
+}
+article header::after
+{
+	content: "";
+	position: absolute;
+	top: -50px;
+	left: 0;
+	display: block;
+	border-top: 25px solid  #ffffff; 
+	border-left: 50px solid  #ffffff; 
+	border-right: 50px solid  #008080; 
+	border-bottom: 25px solid  #008080; 
+}
+article header h2
+{
+	position: relative;
+}
+article header h2::before
+{
+	content: "";
+	position: absolute; 
+	top: -70px;
+	right: -250px;
+	display: block;   
+	border-top: 50px solid  #ffffff; 
+	border-left: 100px solid  #ffffff; 
+	border-right: 100px solid  transparent; 
+	border-bottom: 50px solid  #ffffff;  
+}
+article header h2::after
+{
+	content: "";
+	position: absolute;
+	top: -70px;
+	right: -50px;
+	display: block;
+	border-top: 25px solid  #ffffff; 
+	border-left: 50px solid  #008080; 
+	border-right: 50px solid  #ffffff; 
+	border-bottom: 25px solid  #008080; 
+}
+article section
+{
+	margin: 100px 580px 100px 280px;
+	padding: 40px 50px;
+	border-radius: 25px;
+	box-shadow: 40px -30px 5px #008080;
+	position: relative;
+	background-color: #ffffff;
+}
+h2
+{
+	color: #008080;
+	text-transform: uppercase;
+	transition: all 1s ease;
+	margin-bottom: 20px;
+	text-align: center;
+}
+section h2
+{
+	text-align: center;
+}
+h2:hover
+{
+	font-size: 1.7em;
+	transition: all 1s ease;
+}
+section *:not(h2), header p, header p * 
+{
+	font-family: "Montserrat", "Times New Roman";
+}
+ol
+{
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+}
+ol li::before
+{
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color: #008080;
+    font-weight: bolder;
+}
+section a
+{
+	text-decoration: none;
+	color: #008080;
+}
+a:hover
+{
+	text-decoration: underline;
+}
