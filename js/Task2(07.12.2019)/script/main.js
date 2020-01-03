@@ -1,40 +1,47 @@
-function* FibonachiGenerator()
+function Guess(min, max)
 {
-	let fib1 = 1;
-  	let fib2 = 1;
-  	for(let i=0; true; i++)
-  	{  
-	    let temp = fib2;
-	    fib2 = fib1;
-	    fib1 = fib1 + temp;
-	    let reset = yield temp;
-	    if (reset)
-	    {
-	    	let fib1 = 1;
-  			let fib2 = 1;
-	    }
-	}
-}
+	// min = Math.ceil(min);
+ //  	max = Math.floor(max);
+  	let number = Math.floor(Math.random() * (max - min)) + min, count = 0, N;
+  	console.log("number = " + number);
+  	do
+  	{
+	  	let str = "Вгадайте число з проміжку [" + min +";"+ max + "]";
+	  	N = max;
+	  	//console.log("до циклу ", N);
+	  	while (N >= max || N <= min)
+		{
+			N = prompt(str, min);
+			//console.log("після циклу ", N);
+			if (N==null)
+			break;
+		}
+		
+		console.log(N);
+		if (N==null)
+			break;
 
-function generateFibN()
-{
-	let N = prompt("Скільки згенерувати елементів?", 1);
-	let fib = FibonachiGenerator();
-	console.log("");
-	for (let i = 1; i<=N; i++)
-	{
-		console.log(fib.next().value)
-	}
-}
+	  	count++;
+	  	console.log("count = " + count);
+	  	if (N==number)
+		{
+			alert("Вітаю! Ви вгадали число за " + count + " спроб(-у, -и).");
+			console.log("Вітаю! Ви вгадали число за " + count + " спроб(-у, -и).");
+			return ;
+		}
+		else
+		{
+			alert("Спробуйте ще!");
+	  		console.log("Спробуйте ще!");			
+		}
+		if (N<number)
+	  	{
+	  		min = N;
+	  	}
+	  	else if (N>number)
+	  	{
+	  		max = N;
+	  	}
+	} while (N!=number);
 
-function start()
-{
-	let choice = 1;
-	while(choice != 0)
-	{
-		generateFibN(); 
-		choice = prompt("Продовжити? (символ - так, 0 - ні.)", 1);
-	}
 }
-
-alert("Task1 JS. Ряд Фібоначчі.\n\nВведіть start() у консолі.")
